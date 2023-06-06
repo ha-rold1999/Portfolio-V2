@@ -4,7 +4,10 @@ function App() {
   return (
     <>
       <Header />
-      <div className="max-w-screen-2xl h-screen overflow-hidden"></div>
+      <div
+        className="max-w-screen-2xl h-screen overflow-hidden"
+        id="about"
+      ></div>
     </>
   );
 }

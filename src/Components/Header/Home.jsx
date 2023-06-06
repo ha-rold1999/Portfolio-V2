@@ -35,10 +35,7 @@ export default function Home() {
           animate={textControll}
           transition={{ duration: 2, type: "spring", bounce: 0.3 }}
         >
-          <div
-            className="text-2xl font-bold flex justify-center md:justify-start"
-            style={{ color: "#E1F4F3" }}
-          >
+          <div className="text-2xl font-bold flex justify-center md:justify-start text-black">
             Software Developer
           </div>
           <div

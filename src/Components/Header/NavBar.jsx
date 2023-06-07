@@ -36,7 +36,7 @@ export default function NavBar() {
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex items-center  px-2 py-1 rounded-lg"
         >
-          Specialty
+          <a href="#specialty">Specialty</a>
         </motion.div>
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}

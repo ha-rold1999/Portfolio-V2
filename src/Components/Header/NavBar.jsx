@@ -19,6 +19,7 @@ export default function NavBar() {
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}
           whileTap={{ scale: 0.8 }}
+          whileFocus={{ backgroundColor: "#706C61" }}
           className="text-xl text-white cursor-pointer flex items-center px-2 py-1 rounded-lg"
         >
           <a href="#home">Home</a>

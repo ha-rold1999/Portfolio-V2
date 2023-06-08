@@ -1,20 +1,11 @@
 import ServiceList from "./ServiceList";
-import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 
 export default function Service() {
   const serviceRef = useRef(null);
-  const serviceIsInView = useInView(serviceRef, { once: false });
-  const serviceControll = useAnimation();
-
-  useEffect(() => {
-    if (serviceIsInView) {
-      serviceControll.start("visible");
-    } else {
-      serviceControll.start("hidden");
-    }
-  }, [serviceIsInView, serviceControll]);
+  const serviceIsInView = useInView(serviceRef, { once: true });
 
   return (
     <div

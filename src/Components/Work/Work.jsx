@@ -1,20 +1,11 @@
 import WorkList from "./WorkList";
-import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 
 export default function Work() {
   const workRef = useRef(null);
-  const workIsInView = useInView(workRef, { once: false });
-  const workControll = useAnimation();
-
-  useEffect(() => {
-    if (workIsInView) {
-      workControll.start("visible");
-    } else {
-      workControll.start("hidden");
-    }
-  }, [workIsInView, workControll]);
+  const workIsInView = useInView(workRef, { once: true });
 
   return (
     <div

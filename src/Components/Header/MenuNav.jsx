@@ -38,21 +38,21 @@ export default function MenuNav({ setIsOpen }) {
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex justify-center  px-2 py-1 rounded-lg"
         >
-          Specialty
+          <a href="#specialty">Service</a>
         </motion.div>
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex justify-center px-2 py-1 rounded-lg"
         >
-          Portfolio
+          <a href="#portfolio">Portfolio</a>
         </motion.div>
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex justify-center  px-2 py-1 rounded-lg"
         >
-          Contact
+          <a href="#contact">Contact</a>
         </motion.div>
       </div>
     </motion.div>

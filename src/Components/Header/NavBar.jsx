@@ -36,21 +36,21 @@ export default function NavBar() {
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex items-center  px-2 py-1 rounded-lg"
         >
-          <a href="#specialty">Specialty</a>
+          <a href="#specialty">Service</a>
         </motion.div>
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex items-center px-2 py-1 rounded-lg"
         >
-          Portfolio
+          <a href="#portfolio">Portfolio</a>
         </motion.div>
         <motion.div
           whileHover={{ backgroundColor: "#706C61" }}
           whileTap={{ scale: 0.8 }}
           className="text-xl text-white cursor-pointer flex items-center  px-2 py-1 rounded-lg"
         >
-          Contact
+          <a href="#contact">Contact</a>
         </motion.div>
       </div>
       {!isOpen && (

@@ -18,7 +18,7 @@ export default function Work() {
 
   return (
     <div
-      className="max-w-screen-2xl h-auto xl:h-screen  py-2  md:px-20 overflow-hidden flex flex-col px-4 bg-lightGrey"
+      className="max-w-screen-2xl h-auto xl:h-auto  py-2  md:px-20 overflow-hidden flex flex-col px-4 bg-lightGrey"
       id="portfolio"
     >
       <div className="text-4xl md:text-6xl font-bold text-white mb-5">

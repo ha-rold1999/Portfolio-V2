@@ -3,6 +3,7 @@ import About from "./Components/About/About";
 import Service from "./Components/Service/Service";
 import Work from "./Components/Work/Work";
 import Contact from "./Components/Contact/Contact";
+import Copyright from "./Components/Copyright/Copyright";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Service />
       <Work />
       <Contact />
+      <Copyright />
     </>
   );
 }

@@ -1,9 +1,28 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { faGlobe, faLaptop, faMobile } from "@fortawesome/free-solid-svg-icons";
 
 // eslint-disable-next-line react/prop-types
-export default function ServiceList({ services, icons }) {
+export default function ServiceList() {
+  const services = [
+    {
+      service: "Web Application",
+      desciption:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      service: "Mobile Application",
+      desciption:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      service: "Desktop Application",
+      desciption:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+  ];
+  const icons = [faGlobe, faLaptop, faMobile];
   return (
     <div className="flex flex-col xl:flex-row h-full w-full xl:space-x-5 py-10">
       {services.map((service, index) => {

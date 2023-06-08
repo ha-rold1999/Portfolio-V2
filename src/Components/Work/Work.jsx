@@ -1,33 +1,29 @@
-import ServiceList from "./ServiceList";
+import WorkList from "./WorkList";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 
-export default function Service() {
-  const serviceRef = useRef(null);
-  const serviceIsInView = useInView(serviceRef, { once: false });
-  const serviceControll = useAnimation();
+export default function Work() {
+  const workRef = useRef(null);
+  const workIsInView = useInView(workRef, { once: false });
+  const workControll = useAnimation();
 
   useEffect(() => {
-    if (serviceIsInView) {
-      serviceControll.start("visible");
+    if (workIsInView) {
+      workControll.start("visible");
     } else {
-      serviceControll.start("hidden");
+      workControll.start("hidden");
     }
-  }, [serviceIsInView, serviceControll]);
+  }, [workIsInView, workControll]);
 
   return (
-    <div
-      className="max-w-screen-2xl h-auto xl:h-screen  py-2  md:px-20 overflow-hidden flex flex-col px-4"
-      id="specialty"
-      style={{ backgroundColor: "#706C61" }}
-    >
+    <div className="max-w-screen-2xl h-auto xl:h-screen  py-2  md:px-20 overflow-hidden flex flex-col px-4 bg-lightGrey">
       <div className="text-4xl md:text-6xl font-bold text-white mb-5">
-        My Services
+        My Work
       </div>
-      <div ref={serviceRef}>
+      <div ref={workRef}>
         <AnimatePresence>
-          {serviceIsInView && (
+          {workIsInView && (
             <motion.div
               variants={{
                 hidden: { y: "-100%" },
@@ -38,7 +34,7 @@ export default function Service() {
               exit="hidden"
               transition={{ duration: 0.5, type: "spring", bounce: 0.5 }}
             >
-              <ServiceList />
+              <WorkList />
             </motion.div>
           )}
         </AnimatePresence>

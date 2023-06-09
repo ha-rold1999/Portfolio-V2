@@ -6,8 +6,8 @@ import { useEffect, useRef } from "react";
 export default function About() {
   const profileRef = useRef(null);
   const descriptionRef = useRef(null);
-  const profileIsInView = useInView(profileRef, { once: false });
-  const descriptioIsInView = useInView(descriptionRef, { once: false });
+  const profileIsInView = useInView(profileRef, { once: true });
+  const descriptioIsInView = useInView(descriptionRef, { once: true });
   const profileControll = useAnimation();
   const descriptionControll = useAnimation();
 

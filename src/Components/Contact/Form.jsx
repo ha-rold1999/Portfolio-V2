@@ -2,15 +2,15 @@ export default function Form() {
   return (
     <div className="w-full lg:w-3/5 h-full pt-2 space-y-2">
       <input
-        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white"
+        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white focus:outline-none"
         placeholder="Your Name"
       />
       <input
-        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white"
-        placeholder="Email"
+        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white focus:outline-none"
+        placeholder="Your Email"
       />
       <textarea
-        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white"
+        className="w-full text-xl bg-lightGrey rounded-md px-2 py-1 text-white focus:outline-none"
         rows={9}
         placeholder="Your Meassage"
       />

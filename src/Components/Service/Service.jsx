@@ -28,6 +28,7 @@ export default function Service() {
               animate="visible"
               exit="hidden"
               transition={{ duration: 0.5, type: "spring", bounce: 0.5 }}
+              className="w-full h-full"
             >
               <ServiceList />
             </motion.div>

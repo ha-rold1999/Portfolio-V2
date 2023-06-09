@@ -9,20 +9,20 @@ export default function ServiceList() {
     {
       service: "Web Application",
       desciption:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I have experience in building web applications that encompass both the frontend and backend.",
     },
     {
       service: "Mobile Application",
       desciption:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I possess expertise in developing cross-platform mobile applications that are compatible with both Android and iOS platforms.",
     },
     {
       service: "Desktop Application",
       desciption:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I have hands-on experience in developing desktop applications that offer accounting functionalities and integrate with Internet of Things (IoT) devices.",
     },
   ];
-  const icons = [faGlobe, faLaptop, faMobile];
+  const icons = [faGlobe, faMobile, faLaptop];
   return (
     <div className="flex flex-col xl:flex-row h-full w-full xl:space-x-5 py-10">
       {services.map((service, index) => {
@@ -33,7 +33,8 @@ export default function ServiceList() {
             animate={{ opacity: 1 }}
             whileHover={{ y: -10, backgroundColor: "black" }}
             transition={{ duration: 0.5 }}
-            className=" w-full xl:w-1/3 h-full bg-grey mb-5 rounded-lg p-10 cursor-pointer transition-colors "
+            className=" w-full xl:w-1/3 h-full bg-grey mb-5 rounded-lg p-10 cursor-pointer
+            transition-colors  duration-300 "
           >
             <div className="w-full h-full text-white space-y-5  pr-18 pl-2">
               <FontAwesomeIcon
@@ -41,11 +42,11 @@ export default function ServiceList() {
                 className=" w-14 h-14 pt-2"
               />
               <div className="text-5xl">{service.service}</div>
-              <div className="text-justify text-xl">{service.desciption}</div>
+              <div className="text-xl">{service.desciption}</div>
             </div>
-            <div className="text-white px-2  hover:bg-grey w-fit rounded-lg ">
+            {/* <div className="text-white px-2  hover:bg-grey w-fit rounded-lg ">
               Learn More
-            </div>
+            </div> */}
           </motion.div>
         );
       })}

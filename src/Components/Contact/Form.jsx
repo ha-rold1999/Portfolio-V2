@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
 import Post from "./Fetch";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 export default function Form() {
-  const [isSubmited, setIsSubmited] = useState(false);
+  const [isSending, setIsSending] = useState(true);
   const schema = yup.object().shape({
     name: yup.string().required("Your Name is Required"),
     email: yup
@@ -30,7 +31,9 @@ export default function Form() {
   });
 
   const onSubmit = (data) => {
-    Post(data, reset, setIsSubmited);
+    setIsSending(true);
+    Swal.fire({ title: "Sending Details", showConfirmButton: false });
+    Post(data, reset, isSending, setIsSending);
   };
 
   return (
@@ -64,9 +67,6 @@ export default function Form() {
             text-black cursor-pointer hover:text-white hover:bg-black transition-colors 
             duration-300"
       />
-      {isSubmited && (
-        <span className="text-white">Contact Submitted Successfully</span>
-      )}
     </form>
   );
 }

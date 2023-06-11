@@ -1,4 +1,6 @@
-export default function Post(data, reset, setIsSubmited) {
+import Swal from "sweetalert2";
+
+export default function Post(data, reset, isSending, setIsSending) {
   fetch("https://sheetdb.io/api/v1/3lmclujnx5064", {
     method: "POST",
     headers: {
@@ -13,11 +15,9 @@ export default function Post(data, reset, setIsSubmited) {
   })
     .then((res) => res.json())
     .then(() => {
+      setIsSending(false);
       reset();
-      setIsSubmited(true);
-      setTimeout(() => {
-        setIsSubmited(false);
-      }, 2000);
+      Swal.fire("Message sent", "", "success");
     })
     .catch((err) => console.log(err));
 }

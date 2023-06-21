@@ -9,7 +9,7 @@ export default function Service() {
 
   return (
     <div
-      className="max-w-screen-2xl h-auto xl:h-screen  py-2  md:px-20 overflow-hidden flex flex-col px-4"
+      className=" xl:h-full  py-2  md:px-20 overflow-hidden flex flex-col px-4 "
       id="specialty"
       style={{ backgroundColor: "#706C61" }}
     >

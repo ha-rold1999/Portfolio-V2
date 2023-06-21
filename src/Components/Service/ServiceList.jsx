@@ -24,7 +24,7 @@ export default function ServiceList() {
   ];
   const icons = [faGlobe, faMobile, faLaptop];
   return (
-    <div className="flex flex-col xl:flex-row h-full w-full xl:space-x-5 py-10">
+    <div className="flex flex-col xl:flex-row h-full w-full xl:space-x-5 py-10 ">
       {services.map((service, index) => {
         return (
           <motion.div
@@ -33,7 +33,7 @@ export default function ServiceList() {
             animate={{ opacity: 1 }}
             whileHover={{ y: -10, backgroundColor: "black" }}
             transition={{ duration: 0.5 }}
-            className=" w-full xl:w-1/3 h-full bg-grey mb-5 rounded-lg p-10 cursor-pointer
+            className=" w-full xl:w-1/3 bg-grey mb-5 rounded-lg p-10 cursor-pointer
             transition-colors  duration-300 "
           >
             <div className="w-full h-full text-white space-y-5  pr-18 pl-2">

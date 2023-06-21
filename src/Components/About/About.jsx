@@ -28,7 +28,7 @@ export default function About() {
 
   return (
     <div
-      className="max-w-screen-2xl h-auto  py-2  md:px-20 overflow-hidden flex flex-row px-4"
+      className=" h-auto  py-2  md:px-20 overflow-hidden flex flex-row px-4"
       id="about"
       style={{ backgroundColor: "#706C61" }}
     >

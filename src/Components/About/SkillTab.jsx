@@ -40,7 +40,7 @@ export default function SkillTab() {
   return (
     <AnimatePresence>
       <motion.div
-        className="grid grid-cols-4 lg:grid-cols-8 sm:grid-cols-6 md:grid-cols-7"
+        className="grid grid-cols-4 lg:grid-cols-10 xl:grid-cols-9 sm:grid-cols-6 md:grid-cols-7"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -49,7 +49,7 @@ export default function SkillTab() {
           return (
             <motion.div
               key={index}
-              className="w-20 h-20 md:w-12 md:h-12 lg:w-20 lg:h-20 rounded-lg flex justify-center items-center my-1 hover:border-2 border-white"
+              className="w-20 h-20 md:w-12 md:h-12 lg:w-18 lg:h-18 rounded-lg xl:w-20 xl:h-20 flex justify-center items-center my-1 hover:border-2 border-white"
               style={{ backgroundColor: "#333333" }}
               layout
             >
